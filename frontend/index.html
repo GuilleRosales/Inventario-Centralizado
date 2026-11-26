@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión · Inventario Centralizado</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="login-body">
+    <main class="login-shell">
+        <section class="login-brand">
+            <div class="brand-logo large" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                    <path d="M3 7.5 12 3l9 4.5-9 4.5-9-4.5Z" stroke-linejoin="round"/>
+                    <path d="M3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="eyebrow">Sistema de gestión</p>
+            <h1>Inventario<br>Centralizado</h1>
+            <p class="login-lead">
+                Controle existencias, compras, ventas y transferencias de todas sus
+                sucursales desde una sola plataforma.
+            </p>
+            <ul class="login-features">
+                <li>Inventario por producto y sucursal</li>
+                <li>Compras, ventas y transferencias trazables</li>
+                <li>Alertas automáticas de stock mínimo</li>
+                <li>Roles y permisos por usuario</li>
+            </ul>
+        </section>
+
+        <section class="login-panel">
+            <div class="login-card">
+                <div class="login-card-head">
+                    <div class="brand-logo small" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path d="M3 7.5 12 3l9 4.5-9 4.5-9-4.5Z" stroke-linejoin="round"/>
+                            <path d="M3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2>Iniciar sesión</h2>
+                        <p class="muted">Acceda con el correo y la contraseña asignados.</p>
+                    </div>
+                </div>
+
+                <form id="login-form" novalidate>
+                    <label class="field">
+                        <span>Correo electrónico</span>
+                        <input type="email" name="correo" required autocomplete="username"
+                               placeholder="usuario@empresa.com" autofocus>
+                    </label>
+                    <label class="field">
+                        <span>Contraseña</span>
+                        <input type="password" name="password" required autocomplete="current-password"
+                               placeholder="Escriba su contraseña">
+                    </label>
+                    <div id="login-error" class="form-error" role="alert" hidden></div>
+                    <button class="btn btn-primary btn-block" type="submit" id="login-submit">
+                        Ingresar al sistema
+                    </button>
+                </form>
+
+                <div class="demo-box">
+                    <p>Acceso de demostración</p>
+                    <div class="demo-actions">
+                        <button type="button" class="btn btn-ghost btn-sm"
+                                data-demo="admin@inventario.local|Admin123!">Administrador</button>
+                        <button type="button" class="btn btn-ghost btn-sm"
+                                data-demo="vendedor@inventario.local|Demo123!">Vendedor</button>
+                    </div>
+                </div>
+            </div>
+            <p class="login-foot">Sistema de inventario multi-sucursal · HTML, CSS y JavaScript</p>
+        </section>
+    </main>
+
+    <script type="module" src="/js/core/login.js"></script>
+</body>
+</html>
